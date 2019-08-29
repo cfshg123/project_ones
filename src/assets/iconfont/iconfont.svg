@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="caidanzhengfangxing-" unicode="&#58889;" d="M382.5 313.4H120.4c-33 0-60-27-60-60v-262.1c0-33 27-60 60-60h262.1c33 0 60 27 60 60V253.4c0 33-27 60-60 60zM119.8 443.4h262.1c33 0 60 27 60 60V765.6c0 33-27 60-60 60H119.8c-33 0-60-27-60-60v-262.1c0-33.1 27-60.1 60-60.1zM634.5 442.6h262.1c33 0 60 27 60 60V764.8c0 33-27 60-60 60H634.5c-33 0-60-27-60-60v-262.1c0-33.1 27-60.1 60-60.1zM897.2 312.6H635.1c-33 0-60-27-60-60v-262.1c0-33 27-60 60-60h262.1c33 0 60 27 60 60V252.6c0 33-27 60-60 60z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

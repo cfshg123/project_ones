@@ -9,7 +9,7 @@
               <el-form-item label="密码" prop="pass">
                   <el-input type="password" v-model="ruleForm.pass" autocomplete="off" placeholder="请输入密码"></el-input>
               </el-form-item>
-              <el-form-item>
+              <el-form-item style="margin-top: 50px">
                   <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
                   <el-button @click="resetForm('ruleForm')">重置</el-button>
               </el-form-item>
@@ -57,7 +57,7 @@ export default {
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            alert('submit!');
+            this.$router.replace('/Admin');
           } else {
             console.log('error submit!!');
             return false;
