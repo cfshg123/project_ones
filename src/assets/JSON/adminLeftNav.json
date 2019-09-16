@@ -1,0 +1,175 @@
+[
+    {
+    "id": "1",
+    "name": "我的任务",
+    "pid": null,
+    "children":[
+        {
+        "id":"1.1",
+        "name": "待办任务",
+        "pid": "1",
+        "children": null
+        },
+        {
+            "id":"1.2",
+            "name": "已办任务",
+            "pid": "1",
+            "children": null
+        },
+        {
+            "id":"1.3",
+            "name": "已发任务",
+            "pid": "1",
+            "children": null
+        },
+        {
+            "id":"1.4",
+            "name": "消息管理",
+            "pid": "1",
+            "children": null
+        }
+    ]
+    },
+    {
+        "id": "2",
+        "name": "通知管理",
+        "pid": null,
+        "children": null
+    },
+    {
+        "id": "3",
+        "name": "项目立项",
+        "pid": null,
+        "children":[
+            {
+            "id":"3.1",
+            "name": "立项信息维护",
+            "pid": "3",
+            "children": null
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "项目管理",
+        "pid": null,
+        "children":[
+            {
+            "id":"4.1",
+            "name": "局管项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.2",
+            "name": "局签托管项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.3",
+            "name": "上海交建项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.4",
+            "name": "中港疏浚项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.5",
+            "name": "上航建设项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.6",
+            "name": "福建交建项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.7",
+            "name": "中交水利项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.8",
+            "name": "江苏交建项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.9",
+            "name": "格源环境项目",
+            "pid": "4",
+            "children": null
+            },
+            {
+            "id":"4.10",
+            "name": "勘察设研项目",
+            "pid": "4",
+            "children": null
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "项目部考核",
+        "pid": null,
+        "children":[
+            {
+            "id":"5.1",
+            "name": "绩效考核",
+            "pid": "5",
+            "children": [
+                {
+                    "id":"5.1.1",
+                    "name": "考评总结",
+                    "pid": "5.1",
+                    "children": null
+                },
+                {
+                    "id":"5.1.2",
+                    "name": "考核申报",
+                    "pid": "5.1",
+                    "children": null
+                },
+                {
+                    "id":"5.1.3",
+                    "name": "考核小组",
+                    "pid": "5.1",
+                    "children": null
+                },
+                {
+                    "id":"5.1.4",
+                    "name": "目标考核",
+                    "pid": "5.1",
+                    "children": null
+                },
+                {
+                    "id":"5.1.5",
+                    "name": "增效考核",
+                    "pid": "5.1",
+                    "children": null
+                },
+                {
+                    "id":"5.1.6",
+                    "name": "整改反馈",
+                    "pid": "5.1",
+                    "children": null
+                },
+                {
+                    "id":"5.1.7",
+                    "name": "考核方案",
+                    "pid": "5.1",
+                    "children": null
+                }
+            ]
+            }
+        ]
+        }
+]
