@@ -1,20 +1,20 @@
 <template>
-  <div class="admin" id="admin">
-    <header id="title-header" class="clearfix">
+  <el-container>
+    <el-header id="title-header" class="clearfix">
       <div id="title-left"></div>
       <div id="title-main"></div>
       <div id="title-right">
         <img src="../assets/images/head/user2-160x160.png" alt="">
         <span>{{msg}}</span>
       </div>
-    </header>
-    <div id="admin-aside">
-      <el-radio-group id="aside-top" v-model="isCollapse" style="margin-bottom: 20px;">
-        <el-radio-button :label="false"><i class="iconfont icon-caidanzhengfangxing-"></i></el-radio-button>
-        <el-radio-button :label="true"><i class="iconfont icon-fangda"></i></el-radio-button>
-      </el-radio-group>
+    </el-header>
+    <el-container id="admin-aside">
+      <el-aside width="240px" height="1200px">
+         <el-radio-group id="aside-top" v-model="isCollapse" style="margin-bottom: 20px;">
+          <!-- <el-radio-button :label=isShow><i class="iconfont icon-suoxiao"></i></el-radio-button> -->
+          <el-radio-button :label=isShow><i ref="icon" class="iconfont icon-caidanzhengfangxing-"  @click="toggleIcon"></i></el-radio-button>
+        </el-radio-group>
 
-      <ul id="aside-left">
         <el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
           <el-submenu index="1">
             <template slot="title">
@@ -47,9 +47,11 @@
             <span slot="title">导航四</span>
           </el-menu-item>
         </el-menu>
-      </ul>
-    </div>
-  </div>
+      </el-aside>
+      <el-main>Main</el-main>
+    </el-container>
+  </el-container>
+
 </template>
 
 <script>
@@ -58,10 +60,22 @@ export default {
   data () {
     return {
       msg: '系统管理员',
-      isCollapse: true
+      isCollapse: true,
+      isShow: true
     }
   },
    methods: {
+      toggleIcon: function (key,keyPath) {
+        if(this.$refs.icon.className === 'iconfont icon-caidanzhengfangxing-'){
+          this.$refs.icon.className = 'iconfont icon-suoxiao';
+          this.isShow = false;
+          
+        }else if (this.$refs.icon.className === 'iconfont icon-suoxiao') {
+          this.$refs.icon.className = 'iconfont icon-caidanzhengfangxing-';
+          this.isShow = true;
+        }
+        
+     },
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
       },
@@ -79,6 +93,7 @@ export default {
     height: 60px;
     background: url('../assets/images/head-bg.png') no-repeat right,linear-gradient(to bottom,#e5e5ea, #d1d1d6);
     background-size: 600px 60px;
+    padding: 0px;
 
     #title-left {
       width: 240px;
@@ -110,15 +125,11 @@ export default {
   
   #admin-aside {
     float: left;
+    height: 1200px;
     // 修改 element ui 样式 时 scoped 会不能穿透 使用deep 穿透
    /deep/ .el-radio-button__inner {    
       border: 0px;
       // margin-left: -50px;
-    }
-    ul, li {
-      padding: 0px;
-      margin: 0px;
-      list-style: none;
     }
     .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
@@ -127,35 +138,9 @@ export default {
     #aside-top {
           width: 240px;
           height: 40px;
-          border-bottom: solid 1px #d1d1d6;
+          border-bottom: 1px solid #d1d1d6;
           margin-left: -50px;
-          // li {
-          //   width: 24px;
-          //   height: 24px;
-          //   display: inline-block;
-          // }
-
-          // li:first-child{
-          //   background-color: rgb(255,59,48);
-          //   border-radius: 50%;
-          //   margin-left: -50px;
-          //   margin-top: 8px;
-          //   margin-right: 40px;
-
-          //   i {
-          //     color: #fff;
-          //     line-height: 24px;
-          //   }
-          // }
-          // li:last-child{
-          //   background-color: rgb(255, 200, 48);
-          //   border-radius: 50%;
-
-          //   i {
-          //     color: #fff;
-          //     line-height: 24px;
-          //   }
-          // }
+          
       }
     }
 </style>

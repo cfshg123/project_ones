@@ -171,5 +171,63 @@
             ]
             }
         ]
-        }
+    },
+    {
+        "id": "6",
+        "name": "项目部设备",
+        "pid": null,
+        "children":[
+            {
+                "id":"6.1",
+                "name": "船舶管理",
+                "pid": "6",
+                "children": [
+                    {
+                        "id":"6.1.1",
+                        "name": "成本月报",
+                        "pid": "6.1",
+                        "children": null
+                    },
+                    {
+                        "id":"6.1.2",
+                        "name": "成本查看",
+                        "pid": "6.1",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id":"6.2",
+                "name": "管线报表",
+                "pid": "6",
+                "children": [
+                    {
+                        "id":"6.2.1",
+                        "name": "管线报表",
+                        "pid": "6.2",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id":"6.3",
+                "name": "自有设备",
+                "pid": "6",
+                "children": [
+                    {
+                        "id":"6.3.1",
+                        "name": "生产设备",
+                        "pid": "6.3",
+                        "children": null
+                    },
+                    {
+                        "id":"6.3.2",
+                        "name": "特种设备",
+                        "pid": "6.3",
+                        "children": null
+                    }
+                ]
+            }
+        ]
+    }
 ]
